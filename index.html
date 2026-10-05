@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA — Luxury Fragrances</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icons for UI Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">AURA<span>.</span></a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Fragrances</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="#" class="icon-link" id="search-btn" title="Search"><i class="ri-search-line"></i></a>
+        <a href="#" class="icon-link cart-icon" title="Cart">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-badge">2</span>
+        </a>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <span class="subtitle">Elegance in Every Drop</span>
+          <h1>Unveil Your Signature Scent</h1>
+          <p>Discover crafted perfumes distilled from rare botanical essences and timeless artistry.</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn btn-primary">Explore Collection</a>
+            <a href="#about" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-img-wrapper">
+          <img src="image/img1.jpg" alt="AURA Luxury Perfume Bottle" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products section container" id="products">
+      <div class="section-header">
+        <span class="section-subtitle">Curated Selection</span>
+        <h2 class="section-title">Our Signature Collection</h2>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <span class="badge">Bestseller</span>
+            <img src="image/img2.jpg" alt="Elysian Rose Eau de Parfum">
+            <button class="add-to-cart-btn"><i class="ri-shopping-bag-line"></i> Add to Cart</button>
+          </div>
+          <div class="product-info">
+            <span class="category">Floral & Wood</span>
+            <h3>Elysian Rose</h3>
+            <p class="price">$240.00</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="image/img3.jpg" alt="Velvet Oud Eau de Parfum">
+            <button class="add-to-cart-btn"><i class="ri-shopping-bag-line"></i> Add to Cart</button>
+          </div>
+          <div class="product-info">
+            <span class="category">Oriental & Warm</span>
+            <h3>Velvet Oud</h3>
+            <p class="price">$290.00</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <span class="badge">New</span>
+            <img src="image/img4.jpg" alt="Soleil Citrus Eau de Parfum">
+            <button class="add-to-cart-btn"><i class="ri-shopping-bag-line"></i> Add to Cart</button>
+          </div>
+          <div class="product-info">
+            <span class="category">Fresh & Zesty</span>
+            <h3>Soleil Citrus</h3>
+            <p class="price">$195.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="about-container container">
+        <div class="about-img">
+          <img src="image/img5.jpg" alt="Perfume Craftsmanship">
+        </div>
+        <div class="about-content">
+          <span class="section-subtitle">Craftsmanship</span>
+          <h2>Distilled with Passion & Perfection</h2>
+          <p>Every bottle of AURA is formulated in Grasse, France, combining centuries-old artisanal traditions with contemporary botanical balance. We sustainably source organic petals, wild woods, and natural oils to ensure an unforgettable fragrance experience.</p>
+          <a href="#products" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section container" id="contact">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required class="form-input">
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required class="form-input">
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required class="form-input"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-content">
+      <input type="text" id="search-input" placeholder="Search fragrances e.g., Rose, Oud, Citrus...">
+      <i class="ri-close-line" id="close-search"></i>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-col">
+        <a href="#" class="logo">AURA<span>.</span></a>
+        <p>Crafting memories through timeless luxury scents.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Collection</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-pinterest-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 AURA Fragrances. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
